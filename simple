@@ -1,14 +1,21 @@
-#include <stdio.h>
 #include<iostream>
+#include<vector>
 using namespace std;
 int main()
-{int a[10][10],i=0,j=0,r,c;
-    printf("Enter the array size(R,C):\n");
-    scanf("%d%d",&r,&c);
-    printf("\nEnter no.s:");
-    for(;i<r;++i)
-    {for(;j<c;++j)
-    cin>>a[i][j];
-    }cout<<a[0][0];
+{vector<int> t;
+int n,c=0,d=0;
+    for (int i=0;cin>>n;++i)
+    {if(n<=99||n>=0)
+        t.push_back(n);
+        
+        if(n==42)
+        {c++;d=i;}
+    }
+    if (c)
+    for(int i=0;i<d;++i)
+    {
+        cout<<t[i]<<endl;
+    }
     return 0;
+    
 }
